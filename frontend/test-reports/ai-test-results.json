@@ -1,0 +1,299 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 5,
+  "numPassedTestSuites": 0,
+  "numPassedTests": 9,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 14,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1791351800839,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 273,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateProductForm should render heading, all fields and the submit button",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should render heading, all fields and the submit button"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 29,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateProductForm should render the category select with placeholder and all seven categories",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should render the category select with placeholder and all seven categories"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 739,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "pass": false,
+                "message": "expect(element).toHaveValue(Blue Jeans)\n\nExpected the element to have value:\n  Blue Jeans\nReceived:\n  B"
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: expect(element).toHaveValue(Blue Jeans)\n\nExpected the element to have value:\n  Blue Jeans\nReceived:\n  B\n    at Object.toHaveValue (<rootDir>\\src\\components\\CreateProductForm.test.jsx:97:51)"
+          ],
+          "fullName": "CreateProductForm should update controlled fields as the user types and selects",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should update controlled fields as the user types and selects"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 782,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "expect(jest.fn()).toHaveBeenCalledWith(...expected)\n\n- Expected\n+ Received\n\n  Object {\n    \"category\": \"jeans\",\n-   \"description\": \"Nice denim\",\n+   \"description\": \"N\",\n    \"image\": \"\",\n-   \"name\": \"Blue Jeans\",\n-   \"price\": \"19.99\",\n+   \"name\": \"B\",\n+   \"price\": \"1\",\n  },\n\nNumber of calls: 1",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)\n\n- Expected\n+ Received\n\n  Object {\n    \"category\": \"jeans\",\n-   \"description\": \"Nice denim\",\n+   \"description\": \"N\",\n    \"image\": \"\",\n-   \"name\": \"Blue Jeans\",\n-   \"price\": \"19.99\",\n+   \"name\": \"B\",\n+   \"price\": \"1\",\n  },\n\nNumber of calls: 1\n    at Object.toHaveBeenCalledWith (<rootDir>\\src\\components\\CreateProductForm.test.jsx:109:27)"
+          ],
+          "fullName": "CreateProductForm should call createProduct with the entered data on submit",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should call createProduct with the entered data on submit"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 842,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateProductForm should reset all fields after successful submission",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should reset all fields after successful submission"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 34,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateProductForm should prevent default form submission",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should prevent default form submission"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 122,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateProductForm should read selected image file as data URL and show Image uploaded",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should read selected image file as data URL and show Image uploaded"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 969,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "expect(jest.fn()).toHaveBeenCalledWith(...expected)\n\nExpected: ObjectContaining {\"image\": \"data:image/png;base64,STUBBED\", \"name\": \"Blue Jeans\"}\nReceived: {\"category\": \"jeans\", \"description\": \"N\", \"image\": \"data:image/png;base64,STUBBED\", \"name\": \"B\", \"price\": \"1\"}\n\nNumber of calls: 1",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)\n\nExpected: ObjectContaining {\"image\": \"data:image/png;base64,STUBBED\", \"name\": \"Blue Jeans\"}\nReceived: {\"category\": \"jeans\", \"description\": \"N\", \"image\": \"data:image/png;base64,STUBBED\", \"name\": \"B\", \"price\": \"1\"}\n\nNumber of calls: 1\n    at Object.toHaveBeenCalledWith (<rootDir>\\src\\components\\CreateProductForm.test.jsx:155:27)"
+          ],
+          "fullName": "CreateProductForm should include the base64 image in the submitted product",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should include the base64 image in the submitted product"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 21,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateProductForm should do nothing when the file input change has no file",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should do nothing when the file input change has no file"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 794,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "pass": false,
+                "message": "expect(element).toHaveValue(Blue Jeans)\n\nExpected the element to have value:\n  Blue Jeans\nReceived:\n  B"
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: expect(element).toHaveValue(Blue Jeans)\n\nExpected the element to have value:\n  Blue Jeans\nReceived:\n  B\n    at Object.toHaveValue (<rootDir>\\src\\components\\CreateProductForm.test.jsx:175:51)"
+          ],
+          "fullName": "CreateProductForm should preserve previously typed fields after an image is loaded",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should preserve previously typed fields after an image is loaded"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 27,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateProductForm should show loading state and disable the button when store loading is true",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should show loading state and disable the button when store loading is true"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 40,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateProductForm should show enabled Create Product button when not loading",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should show enabled Create Product button when not loading"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 811,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "pass": false,
+                "message": "expect(element).toHaveValue(Blue Jeans)\n\nExpected the element to have value:\n  Blue Jeans\nReceived:\n  B"
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: expect(element).toHaveValue(Blue Jeans)\n\nExpected the element to have value:\n  Blue Jeans\nReceived:\n  B\n    at Object.toHaveValue (<rootDir>\\src\\components\\CreateProductForm.test.jsx:206:51)"
+          ],
+          "fullName": "CreateProductForm should not reset the form and should log when createProduct rejects",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "failed",
+          "title": "should not reset the form and should log when createProduct rejects"
+        },
+        {
+          "ancestorTitles": [
+            "CreateProductForm"
+          ],
+          "duration": 29,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "CreateProductForm should mark name, description, price and category as required and price step as 0.01",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 7,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should mark name, description, price and category as required and price step as 0.01"
+        }
+      ],
+      "endTime": 1791351813738,
+      "message": "  ● CreateProductForm › should update controlled fields as the user types and selects\n\n    expect(element).toHaveValue(Blue Jeans)\n\n    Expected the element to have value:\n      Blue Jeans\n    Received:\n      B\n\n       95 |     render(<CreateProductForm />);\n       96 |     await fillForm(user);\n    >  97 |     expect(screen.getByLabelText('Product Name')).toHaveValue('Blue Jeans');\n          |                                                   ^\n       98 |     expect(screen.getByLabelText('Description')).toHaveValue('Nice denim');\n       99 |     expect(screen.getByLabelText('Price')).toHaveValue(19.99);\n      100 |     expect(screen.getByLabelText('Category')).toHaveValue('jeans');\n\n      at Object.toHaveValue (src/components/CreateProductForm.test.jsx:97:51)\n\n  ● CreateProductForm › should call createProduct with the entered data on submit\n\n    expect(jest.fn()).toHaveBeenCalledWith(...expected)\n\n    - Expected\n    + Received\n\n      Object {\n        \"category\": \"jeans\",\n    -   \"description\": \"Nice denim\",\n    +   \"description\": \"N\",\n        \"image\": \"\",\n    -   \"name\": \"Blue Jeans\",\n    -   \"price\": \"19.99\",\n    +   \"name\": \"B\",\n    +   \"price\": \"1\",\n      },\n\n    Number of calls: 1\n\n      107 |     await user.click(screen.getByRole('button', { name: /create product/i }));\n      108 |     await waitFor(() => expect(createProduct).toHaveBeenCalledTimes(1));\n    > 109 |     expect(createProduct).toHaveBeenCalledWith({\n          |                           ^\n      110 |       name: 'Blue Jeans',\n      111 |       description: 'Nice denim',\n      112 |       price: '19.99',\n\n      at Object.toHaveBeenCalledWith (src/components/CreateProductForm.test.jsx:109:27)\n\n  ● CreateProductForm › should include the base64 image in the submitted product\n\n    expect(jest.fn()).toHaveBeenCalledWith(...expected)\n\n    Expected: ObjectContaining {\"image\": \"data:image/png;base64,STUBBED\", \"name\": \"Blue Jeans\"}\n    Received: {\"category\": \"jeans\", \"description\": \"N\", \"image\": \"data:image/png;base64,STUBBED\", \"name\": \"B\", \"price\": \"1\"}\n\n    Number of calls: 1\n\n      153 |     await user.click(screen.getByRole('button', { name: /create product/i }));\n      154 |     await waitFor(() => expect(createProduct).toHaveBeenCalledTimes(1));\n    > 155 |     expect(createProduct).toHaveBeenCalledWith(\n          |                           ^\n      156 |       expect.objectContaining({ image: IMAGE_DATA, name: 'Blue Jeans' })\n      157 |     );\n      158 |   });\n\n      at Object.toHaveBeenCalledWith (src/components/CreateProductForm.test.jsx:155:27)\n\n  ● CreateProductForm › should preserve previously typed fields after an image is loaded\n\n    expect(element).toHaveValue(Blue Jeans)\n\n    Expected the element to have value:\n      Blue Jeans\n    Received:\n      B\n\n      173 |     await user.upload(screen.getByLabelText('Upload Image'), file);\n      174 |     expect(await screen.findByText(/Image uploaded/)).toBeInTheDocument();\n    > 175 |     expect(screen.getByLabelText('Product Name')).toHaveValue('Blue Jeans');\n          |                                                   ^\n      176 |     expect(screen.getByLabelText('Description')).toHaveValue('Nice denim');\n      177 |     expect(screen.getByLabelText('Price')).toHaveValue(19.99);\n      178 |     expect(screen.getByLabelText('Category')).toHaveValue('jeans');\n\n      at Object.toHaveValue (src/components/CreateProductForm.test.jsx:175:51)\n\n  ● CreateProductForm › should not reset the form and should log when createProduct rejects\n\n    expect(element).toHaveValue(Blue Jeans)\n\n    Expected the element to have value:\n      Blue Jeans\n    Received:\n      B\n\n      204 |     await user.click(screen.getByRole('button', { name: /create product/i }));\n      205 |     await waitFor(() => expect(logSpy).toHaveBeenCalledWith('error creating a product'));\n    > 206 |     expect(screen.getByLabelText('Product Name')).toHaveValue('Blue Jeans');\n          |                                                   ^\n      207 |     expect(screen.getByLabelText('Description')).toHaveValue('Nice denim');\n      208 |     expect(screen.getByLabelText('Price')).toHaveValue(19.99);\n      209 |     expect(screen.getByLabelText('Category')).toHaveValue('jeans');\n\n      at Object.toHaveValue (src/components/CreateProductForm.test.jsx:206:51)\n",
+      "name": "<rootDir>\\src\\components\\CreateProductForm.test.jsx",
+      "startTime": 1791351802674,
+      "status": "failed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}
